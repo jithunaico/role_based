@@ -1,6 +1,8 @@
 const supertest = require('supertest');
 const app = require('../index');
 const User = require('../models/User');
+
+//.set('Authorization', 'Bearer ' + token) 
 describe('#user', () => {
   test('return success true', async () => {
     await supertest(app)
